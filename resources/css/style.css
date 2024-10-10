@@ -67,7 +67,6 @@ nav img {
 
 #one img {
   width: 100%;
-
   max-width: 100%;
 }
 
@@ -181,13 +180,81 @@ footer p {
    }
 
   /* Section Two */
-  #two article {
-    border-left: ;
+  #two {
+    display: flex;
   }
-  #two img {
 
-    width: 60%;
-    margin: 32px 24px;
+  #two article.desktop {
+    border-right: 1px solid lightgray;
+    width: 70%;
+    padding: 32px 24px;
 
   }
+
+  #two article img {
+    width: 100%;
+
+  }
+
+  #two  article h2{
+    margin: 32px auto 24px;
+    font-size: 2rem;
+  }
+
+  #two article p {
+    font-size: 1rem;
+  }
+  #two article blockquote {
+
+    margin-bottom: 24px;
+  }
+
+  /* two aside */
+  #two aside {
+    width: 40%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #two aside article:not(:last-of-type) {
+    margin-bottom: 0;
+  }
+  #two aside article {
+    display: flex;
+    padding: 16px;
+    border-bottom: 1px solid lightgray;
+  }
+
+  #two aside article img {
+    width: 35%;
+    height: auto;
+  }
+
+  #two aside article div {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+
+  }
+  #two aside article div  h3{
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+
+  #two aside article div p {
+    margin: 8px 0 ;
+    font-size: 0.8rem;
+    font-weight: 100;
+
+  }
+  #two aside article div a{
+    font-size: 0.8rem;
+
+  }
+  #two aside article:last-of-type {
+    background-color: lightgray;
+  }
+
+
 }
