@@ -2,11 +2,13 @@
   margin: 0px;
 
 }
+
 body {
   font-size: 24px;
 
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 h2 {
   /* margin: 32px auto; */
   font-size: 1.6em;
@@ -14,7 +16,7 @@ h2 {
 
 }
 
-img{
+img {
   /* width: 90%; */
   height: auto;
 }
@@ -23,9 +25,12 @@ section:not(:last-of-type) {
   border-bottom: 1px solid lightgray;
 
 }
-.desktop, .courses img {
+
+.desktop,
+.courses img {
   display: none;
 }
+
 nav {
   height: 4rem;
   display: flex;
@@ -44,11 +49,11 @@ nav img {
   background-color: lightgray;
 }
 
-#one div{
+#one div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding:32px 16px ;
+  padding: 32px 16px;
 }
 
 #one p {
@@ -58,7 +63,7 @@ nav img {
 
 #one button {
   background-color: gray;
-  color:white;
+  color: white;
   border: none;
   height: 50px;
   width: 100%;
@@ -75,31 +80,39 @@ nav img {
 #two aside {
   padding: 16px 16px 32px;
 }
-#two aside article:not(:last-of-type){
-  margin-bottom: 64px ;
+
+#two aside article:not(:last-of-type) {
+  margin-bottom: 64px;
 }
+
 #two aside article div {
   margin: auto 16px;
 }
+
 #two aside article h3 {
   margin-top: 32px;
   font-weight: 500;
 }
+
 #two aside article p {
-  margin:  16px auto;
+  margin: 16px auto;
   font-weight: lighter;
   font-size: smaller;
 }
 
-#two a , #two a:visited, #two a:active {
+#two a,
+#two a:visited,
+#two a:active {
   text-decoration: none;
-  color:rgb(53, 92, 248);
+  color: rgb(53, 92, 248);
   font-size: smaller;
 
 }
-#two a:hover{
-  color:rgb(93, 122, 241)
+
+#two a:hover {
+  color: rgb(93, 122, 241)
 }
+
 #two img {
   width: 100%;
 }
@@ -111,12 +124,14 @@ nav img {
 }
 
 
-#three h2 , #four h2{
+#three h2,
+#four h2 {
 
   text-align: center;
   margin-bottom: 16px;
 }
-#three h3{
+
+#three h3 {
   margin-bottom: 8px;
   padding: 16px 16px 24px;
   background-color: lightgray;
@@ -129,7 +144,7 @@ nav img {
   padding: 32px 0 24px;
 }
 
-#four video{
+#four video {
   width: 100%;
 }
 
@@ -138,46 +153,52 @@ footer p {
   margin: 16px;
 }
 
-@media only screen and  (min-device-width: 481px) {
+@media only screen and (min-device-width: 481px) {
   .mobile {
     display: none;
   }
-  .desktop , .courses img {
+
+  .desktop,
+  .courses img {
     display: block;
   }
+
   /* nav */
   nav {
     display: flex;
     justify-content: space-between;
   }
-  nav a.logo{
+
+  nav a.logo {
     text-decoration: none;
     color: black;
     display: flex;
     margin-left: 24px;
 
   }
-   nav .menu {
+
+  nav .menu {
     display: flex;
     margin-right: 8px;
-   }
-   nav .menu a {
+  }
+
+  nav .menu a {
     text-decoration: none;
     color: black;
     margin-right: 16px;
-   }
+  }
 
-   /* Section One */
-   #one {
+  /* Section One */
+  #one {
     display: flex;
     align-items: center;
-   }
+  }
 
-   #one img {
+  #one img {
     width: 60%;
     height: auto;
     margin: 32px 24px;
-   }
+  }
 
   /* Section Two */
   #two {
@@ -196,7 +217,7 @@ footer p {
 
   }
 
-  #two  article h2{
+  #two article h2 {
     margin: 32px auto 24px;
     font-size: 2rem;
   }
@@ -204,6 +225,7 @@ footer p {
   #two article p {
     font-size: 1rem;
   }
+
   #two article blockquote {
 
     margin-bottom: 24px;
@@ -217,9 +239,11 @@ footer p {
     flex-direction: column;
     justify-content: center;
   }
+
   #two aside article:not(:last-of-type) {
     margin-bottom: 0;
   }
+
   #two aside article {
     display: flex;
     padding: 16px;
@@ -237,24 +261,70 @@ footer p {
     width: 65%;
 
   }
-  #two aside article div  h3{
+
+  #two aside article div h3 {
     font-size: 1.5rem;
     margin-top: 0;
   }
 
   #two aside article div p {
-    margin: 8px 0 ;
+    margin: 8px 0;
     font-size: 0.8rem;
     font-weight: 100;
 
   }
-  #two aside article div a{
+
+  #two aside article div a {
     font-size: 0.8rem;
 
   }
+
   #two aside article:last-of-type {
     background-color: lightgray;
   }
 
+  /* section three */
+  #three {
+    background-color: lightgray;
+  }
 
+  #three .container {
+    display: grid;
+    grid: auto auto auto / 30% 30% 30%;
+    grid-gap: 32px;
+    margin: 32px 72px;
+    max-width: 100%;
+  }
+
+  #three .container article {
+    background-color: white;
+  }
+
+  #three .container article img {
+    width: 100%;
+    height: auto;
+  }
+
+  #three .container article h3 {
+    display: inline-block;
+    background-color: transparent;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    padding-bottom: 16px;
+  }
+
+  #three .desktop {
+    margin: 0 16px 24px;
+  }
+
+  #three .desktop h4 {
+    font-weight: 300;
+    font-size: smaller;
+    margin-bottom: 8px;
+  }
+
+  #three .desktop p {
+    font-size: smaller;
+  }
 }
