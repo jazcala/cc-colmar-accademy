@@ -2,30 +2,39 @@
   margin: 0px;
 
 }
+
 body {
   font-size: 24px;
 
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 h2 {
   /* margin: 32px auto; */
   font-size: 1.6em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+  font-weight: 500;
 }
 
-img{
+img {
   /* width: 90%; */
   height: auto;
 }
 
-section:not(:last-of-type) {
-  border-bottom: 1px solid lightgray;
-
+p,
+blockquote {
+  line-height: 1.6rem;
 }
-.desktop, .courses img {
+
+section:not(:last-of-type) {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.desktop,
+.courses img {
   display: none;
 }
+
 nav {
   height: 4rem;
   display: flex;
@@ -41,14 +50,14 @@ nav img {
 /* Section one */
 
 #one {
-  background-color: lightgray;
+  background-color: #e8e8e8;
 }
 
-#one div{
+#one div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding:32px 16px ;
+  padding: 32px 16px;
 }
 
 #one p {
@@ -58,7 +67,7 @@ nav img {
 
 #one button {
   background-color: gray;
-  color:white;
+  color: white;
   border: none;
   height: 50px;
   width: 100%;
@@ -67,7 +76,6 @@ nav img {
 
 #one img {
   width: 100%;
-
   max-width: 100%;
 }
 
@@ -76,51 +84,57 @@ nav img {
 #two aside {
   padding: 16px 16px 32px;
 }
-#two aside article:not(:last-of-type){
-  margin-bottom: 64px ;
+
+#two aside article:not(:last-of-type) {
+  margin-bottom: 64px;
 }
+
 #two aside article div {
   margin: auto 16px;
 }
+
 #two aside article h3 {
   margin-top: 32px;
   font-weight: 500;
 }
+
 #two aside article p {
-  margin:  16px auto;
+  margin: 16px auto;
   font-weight: lighter;
   font-size: smaller;
 }
 
-#two a , #two a:visited, #two a:active {
+#two a,
+#two a:visited,
+#two a:active {
   text-decoration: none;
-  color:rgb(53, 92, 248);
+  color: rgb(53, 92, 248);
   font-size: smaller;
+}
 
+#two a:hover {
+  color: rgb(93, 122, 241)
 }
-#two a:hover{
-  color:rgb(93, 122, 241)
-}
+
 #two img {
   width: 100%;
 }
-
 
 /* three */
 #three {
   padding: 32px 16px;
 }
 
-
-#three h2 , #four h2{
-
+#three h2,
+#four h2 {
   text-align: center;
   margin-bottom: 16px;
 }
-#three h3{
+
+#three h3 {
   margin-bottom: 8px;
   padding: 16px 16px 24px;
-  background-color: lightgray;
+  background-color: #e8e8e8;
   font-weight: lighter;
 }
 
@@ -130,7 +144,7 @@ nav img {
   padding: 32px 0 24px;
 }
 
-#four video{
+#four video {
   width: 100%;
 }
 
@@ -139,55 +153,252 @@ footer p {
   margin: 16px;
 }
 
-@media only screen and  (min-device-width: 481px) {
+@media only screen and (min-device-width: 481px) {
   .mobile {
     display: none;
   }
-  .desktop , .courses img {
+
+  .desktop,
+  .courses img {
     display: block;
   }
+
   /* nav */
   nav {
     display: flex;
     justify-content: space-between;
   }
-  nav a.logo{
+
+  nav a.logo {
     text-decoration: none;
     color: black;
     display: flex;
-    margin-left: 24px;
-
+    margin-left: 24px
   }
-   nav .menu {
+
+  nav .menu {
     display: flex;
     margin-right: 8px;
-   }
-   nav .menu a {
+  }
+
+  nav .menu a {
     text-decoration: none;
     color: black;
     margin-right: 16px;
-   }
+  }
 
-   /* Section One */
-   #one {
+  /* Section One */
+  #one {
     display: flex;
     align-items: center;
-   }
+  }
 
-   #one img {
+  #one img {
     width: 60%;
     height: auto;
     margin: 32px 24px;
-   }
+  }
 
   /* Section Two */
-  #two article {
-    border-left: ;
+  #two {
+    display: flex;
   }
-  #two img {
 
+  #two article.desktop {
+    border-right: 1px solid #e8e8e8;
+    width: 70%;
+    padding: 32px 24px;
+  }
+
+  #two article img {
+    width: 100%;
+  }
+
+  #two article h2 {
+    margin: 32px auto 24px;
+    font-size: 2rem;
+  }
+
+  #two article p {
+    font-size: 1rem;
+  }
+
+  #two article blockquote {
+    margin-bottom: 24px;
+  }
+
+  /* two aside */
+  #two aside {
+    width: 40%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #two aside article:not(:last-of-type) {
+    margin-bottom: 0;
+  }
+
+  #two aside article {
+    display: flex;
+    padding: 16px;
+    border-bottom: 1px solid #e8e8e8;
+  }
+
+  #two aside article img {
+    width: 35%;
+    height: auto;
+  }
+
+  #two aside article div {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+  }
+
+  #two aside article div h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+
+  #two aside article div p {
+    margin: 8px 0;
+    font-size: 0.8rem;
+    font-weight: 100;
+  }
+
+  #two aside article div a {
+    font-size: 0.8rem;
+  }
+
+  #two aside article:last-of-type {
+    background-color: #e8e8e8;
+  }
+
+  /* section three */
+  #three {
+    background-color: #e8e8e8;
+  }
+
+  #three .container {
+    display: grid;
+    grid: auto auto auto / 30% 30% 30%;
+    grid-gap: 32px;
+    margin: 32px 72px;
+    max-width: 100%;
+  }
+
+  #three .container article {
+    background-color: white;
+  }
+
+  #three .container article img {
+    width: 100%;
+    height: auto;
+  }
+
+  #three .container article h3 {
+    display: inline-block;
+    background-color: transparent;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding-bottom: 16px;
+  }
+
+  #three .desktop {
+    margin: 0 16px 24px;
+  }
+
+  #three .desktop h4 {
+    font-size: 1.1rem;
+    font-weight: 100;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+
+  #three .desktop p {
+    font-size: 1rem;
+  }
+
+  /* four */
+  #four {
+    border-bottom: 1px solid #e8e8e8;
+    padding: 32px 0;
+  }
+
+  #four h2 {
+    margin: 0 auto 32px;
+  }
+
+  #four .container {
+    display: flex;
+  }
+
+  #four article {
     width: 60%;
-    margin: 32px 24px;
-
+    padding: 0 24px;
   }
+
+  #four article h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 24px auto 8px;
+  }
+
+  #four article blockquote {
+    font-size: 1rem;
+  }
+
+  /* four aside */
+  #four aside {
+    width: 40%;
+  }
+
+  #four aside article:first-of-type {
+    background-color: #e8e8e8;
+  }
+
+  #four aside article {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  #four aside article div h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  #four aside article div p {
+    font-size: 0.8rem;
+    font-weight: 100;
+    margin-top: 8px;
+  }
+
+  #four aside article img {
+    width: 35%;
+    padding: 16px;
+    height: auto;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto  24px auto 8px;
+  }
+
+  footer a, footer a:visited, footer a:active{
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  footer a:hover {
+    color: gray;
+  }
+
 }
