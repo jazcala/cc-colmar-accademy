@@ -13,7 +13,7 @@ h2 {
   /* margin: 32px auto; */
   font-size: 1.6em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+  font-weight: 500;
 }
 
 img {
@@ -21,9 +21,13 @@ img {
   height: auto;
 }
 
+p,
+blockquote {
+  line-height: 1.6rem;
+}
+
 section:not(:last-of-type) {
   border-bottom: 1px solid lightgray;
-
 }
 
 .desktop,
@@ -106,7 +110,6 @@ nav img {
   text-decoration: none;
   color: rgb(53, 92, 248);
   font-size: smaller;
-
 }
 
 #two a:hover {
@@ -117,16 +120,13 @@ nav img {
   width: 100%;
 }
 
-
 /* three */
 #three {
   padding: 32px 16px;
 }
 
-
 #three h2,
 #four h2 {
-
   text-align: center;
   margin-bottom: 16px;
 }
@@ -173,8 +173,7 @@ footer p {
     text-decoration: none;
     color: black;
     display: flex;
-    margin-left: 24px;
-
+    margin-left: 24px
   }
 
   nav .menu {
@@ -209,12 +208,10 @@ footer p {
     border-right: 1px solid lightgray;
     width: 70%;
     padding: 32px 24px;
-
   }
 
   #two article img {
     width: 100%;
-
   }
 
   #two article h2 {
@@ -227,7 +224,6 @@ footer p {
   }
 
   #two article blockquote {
-
     margin-bottom: 24px;
   }
 
@@ -259,7 +255,6 @@ footer p {
     display: flex;
     flex-direction: column;
     width: 65%;
-
   }
 
   #two aside article div h3 {
@@ -271,12 +266,10 @@ footer p {
     margin: 8px 0;
     font-size: 0.8rem;
     font-weight: 100;
-
   }
 
   #two aside article div a {
     font-size: 0.8rem;
-
   }
 
   #two aside article:last-of-type {
@@ -309,7 +302,7 @@ footer p {
     display: inline-block;
     background-color: transparent;
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 0;
     padding-bottom: 16px;
   }
@@ -319,12 +312,76 @@ footer p {
   }
 
   #three .desktop h4 {
-    font-weight: 300;
-    font-size: smaller;
+    font-size: 1.1rem;
+    font-weight: 100;
     margin-bottom: 8px;
+    text-transform: uppercase;
   }
 
   #three .desktop p {
-    font-size: smaller;
+    font-size: 1rem;
   }
+
+  /* four */
+  #four {
+    border-bottom: 1px solid lightgray;
+    padding: 32px 0;
+  }
+
+  #four h2 {
+    margin: 0 auto 32px;
+  }
+
+  #four .container {
+    display: flex;
+  }
+
+  #four article {
+    width: 60%;
+    padding: 0 24px;
+  }
+
+  #four article h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 24px auto 8px;
+  }
+
+  #four article blockquote {
+    font-size: 1rem;
+  }
+
+  /* four aside */
+  #four aside {
+    width: 40%;
+  }
+
+  #four aside article:first-of-type {
+    background-color: lightgray;
+  }
+
+  #four aside article {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  #four aside article div h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  #four aside article div p {
+    font-size: 0.8rem;
+    font-weight: 100;
+    margin-top: 8px;
+  }
+
+  #four aside article img {
+    width: 35%;
+    padding: 16px;
+    height: auto;
+  }
+
 }
